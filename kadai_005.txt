@@ -1,0 +1,33 @@
+PS C:\Users\chihomi\OneDrive> cd git_challenge
+PS C:\Users\chihomi\OneDrive\git_challenge> git init
+Initialized empty Git repository in C:/Users/chihomi/OneDrive/git_challenge/.git/
+PS C:\Users\chihomi\OneDrive\git_challenge> git add hello_world.txt
+PS C:\Users\chihomi\OneDrive\git_challenge> git commit -m "1回目のコミット"
+[main (root-commit) 132f79b] 1回目のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\chihomi\OneDrive\git_challenge> git commit -m "2回目のコミット"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\chihomi\OneDrive\git_challenge> git add C:\Users\chihomi\OneDrive\git_challenge
+PS C:\Users\chihomi\OneDrive\git_challenge> git commit -m "2回目のコミット"
+[main f32877b] 2回目のコミット
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\chihomi\OneDrive\git_challenge> git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+PS C:\Users\chihomi\OneDrive\git_challenge> git log oneline
+fatal: ambiguous argument 'oneline': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+PS C:\Users\chihomi\OneDrive\git_challenge> git log --oneline
+f32877b (HEAD -> main) 2回目のコミット
+132f79b 1回目のコミット
+PS C:\Users\chihomi\OneDrive\git_challenge> 
